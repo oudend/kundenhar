@@ -1,0 +1,75 @@
+#main-title {
+  display: flex;
+  background: var(--accent);
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+#main-title > h1 {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+main {
+  background: var(--background);
+  padding: 20px 10px 20px 10px;
+}
+
+#about-us-information {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  gap: 10px;
+  align-content: flex-end;
+}
+
+#about-us-information-text {
+  width: 100vw;
+  font-size: medium;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#workers-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 200px); /*1fr 1fr 1fr 1fr 1fr;*/
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 20px 10px 20px 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  #workers-cards {
+    grid-template-columns: repeat(4, 200px); /*1fr 1fr 1fr 1fr;*/
+  }
+  #about-us-information-text {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 850px) {
+  #workers-cards {
+    grid-template-columns: repeat(2, 200px); /*1fr 1fr;*/
+  }
+  footer {
+    width: calc(100% - 10px);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #about-us-information-text {
+    font-size: x-small;
+  }
+}
+@media screen and (max-width: 470px) {
+  #workers-cards {
+    grid-template-columns: repeat(1, 200px);
+  }
+  footer {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #about-us-information-text {
+    font-size: xx-small;
+  }
+}

@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/about_us.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +35,7 @@
   <body>
     <header>
       <nav>
-        <h1 class="prevent-select">SmartRecipes</h1>
+        <a href="index.html"><h1 class="prevent-select">SmartRecipes</h1></a>
 
         <form id="user-form">
           <input
@@ -49,109 +50,85 @@
           <button type="button" class="material-symbols-outlined">
             person
           </button>
-          <!-- <button class="material-symbols-outlined" type="button">S</button> -->
-          <!-- <button type="button">L</button> -->
         </form>
       </nav>
-      <div id="main-search">
-        <form id="search-filters" class="prevent-select">
-          <section class="search-filter-checkbox">
-            <input type="checkbox" id="checkbox-spicy" /><label
-              for="checkbox-spicy"
-              >Spicy</label
-            >
-          </section>
-          <section class="search-filter-checkbox">
-            <input type="checkbox" id="checkbox-vegan" /><label
-              for="checkbox-vegan"
-              >Vegan</label
-            >
-          </section>
-          <section class="search-filter-checkbox">
-            <input type="checkbox" id="checkbox-vegetarian" /><label
-              for="checkbox-vegetarian"
-              >Vegetarian</label
-            >
-          </section>
-          <section class="search-filter-checkbox">
-            <input type="checkbox" id="checkbox-lactose" /><label
-              for="checkbox-lactose"
-              >Lactose</label
-            >
-          </section>
-          <section class="search-filter-checkbox">
-            <input type="checkbox" id="dog7" value="dog" /><label for="dog7"
-              >Vegan</label
-            >
-          </section>
-          <section class="search-filter-checkbox">
-            <input type="checkbox" id="dog8" value="dog" /><label for="dog8"
-              >Vegetarian</label
-            >
-          </section>
-        </form>
-
-        <form id="search-tools">
-          <button id="main-search-button" type="button">search</button>
-          <div id="search-tools-sort">
-            <label for="main-search-sort">Sort by</label>
-
-            <select name="main-search-sort" id="main-search-sort">
-              <option value="popular">Popular</option>
-              <option value="popular">Cheap</option>
-              <option value="popular">Expensive</option>
-            </select>
-          </div>
-        </form>
-        <form id="search-bar">
-          <input
-            type="search"
-            id="search-recipe"
-            name="search-recipe"
-            placeholder="Search recipe"
-          />
-        </form>
-      </div>
     </header>
-    <main id="index-main">
-      <article class="recipe-card">
-        <section class="recipe-card-title"><h2>title</h2></section>
-        <section class="recipe-card-content">
+    <div id="main-title">
+      <h1><strong>About Us</strong></h1>
+    </div>
+    <main>
+      <section id="about-us-information">
+        <article id="about-us-information-text">
+          This product is meant for educational purposes only. Any resemblance
+          to real persons, living or dead is purley coincidental. Void where
+          prohibited. Some assembly required. List each check separately by bank
+          number. Batteries not included. Contents may settle during shipment.
+          Use only as directed. No other warranty expressed or implied. Do not
+          use while operating a motor vehicle or heavy equipment. Postage will
+          be paid by addressee. Subject to CAB approval. This is not an offer to
+          sell securities.
+        </article>
+        <article>
           <img
-            src="https://images.unsplash.com/photo-1549589237-9e70b6be4da8?"
-            alt="muffin"
-            loading="lazy"
+            src="https://source.unsplash.com/user/erondu/200x200"
+            alt="user"
           />
-          <!-- <div class="recipe-card-img-gradient"></div> -->
-        </section>
-        <section class="recipe-card-footer">
-          reviews
-          <div class="star-ratings">
-            <span class="fa fa-star star-checked"></span>
-            <span class="fa fa-star star-checked"></span>
-            <span class="fa fa-star star-checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </section>
-      </article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
-      <article class="recipe-card">heu</article>
+        </article>
+      </section>
+
+      <h2>The people who work here</h2>
+      <section id="workers-cards">
+        <article>
+          <img
+            src="https://source.unsplash.com/200x200/?human,face,happy,adult"
+            alt="user"
+          />
+          <h3>James Jamesson</h3>
+        </article>
+        <article>
+          <img
+            src="https://source.unsplash.com/200x200/?human,face,happy,adult"
+            alt="user"
+          />
+          <h3>James Jamesson</h3>
+        </article>
+        <article>
+          <img
+            src="https://source.unsplash.com/200x200/?human,face,happy,adult"
+            alt="user"
+          />
+          <h3>James Jamesson</h3>
+        </article>
+        <article>
+          <img
+            src="https://source.unsplash.com/200x200/?human,face,happy,adult"
+            alt="user"
+          />
+          <h3>James Jamesson</h3>
+        </article>
+        <article>
+          <img
+            src="https://source.unsplash.com/200x200/?human,face,happy,adult"
+            alt="user"
+          />
+          <h3>James Jamesson</h3>
+        </article>
+        <article>
+          <img
+            src="https://source.unsplash.com/200x200/?human,face,happy,adult"
+            alt="user"
+          />
+          <h3>James Jamesson</h3>
+        </article>
+      </section>
     </main>
+
     <div class="page-navigation">
       <span class="material-symbols-outlined"> chevron_left </span>
-      <h3>page 1 of 169</h3>
+      <h3>page 1 of 10</h3>
       <span class="material-symbols-outlined"> chevron_right </span>
     </div>
+
     <footer>
       <article class="footer-info">
         <h2>smart recipes</h2>
