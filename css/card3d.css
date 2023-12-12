@@ -1,0 +1,15 @@
+.card3d {
+  position: relative;
+  margin: 4px;
+  /* transform: scale(1); */
+  perspective: 600px;
+  z-index: 1;
+  transition: box-shadow 100ms, transform 300ms;
+  cursor: pointer;
+}
+
+.card3d:hover {
+  z-index: 10;
+  /* box-shadow: 0 0px 70px rgba(0, 0, 0, 0.5); */
+  transform: scale(1.2);
+}

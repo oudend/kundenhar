@@ -15,6 +15,12 @@ main {
   padding: 20px 10px 20px 10px;
 }
 
+main > h2 {
+  text-align: center;
+  align-content: center;
+  margin-bottom: 0;
+}
+
 #about-us-information {
   display: flex;
   flex-direction: row;
@@ -37,6 +43,45 @@ main {
   column-gap: 10px;
   row-gap: 10px;
   padding: 20px 10px 20px 10px;
+}
+
+.worker-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.worker-card > h3 {
+  transition: text-shadow 100ms;
+}
+
+.worker-card:hover > h3 {
+  --shadow-color: gold;
+  text-shadow: 0 0 20px #fff, 0 0 20px var(--shadow-color),
+    0 0 20px var(--shadow-color), 0 0 20px var(--shadow-color),
+    0 0 20px var(--shadow-color), 0 0 20px var(--shadow-color),
+    0 0 20px var(--shadow-color);
+}
+
+.worker-description {
+  pointer-events: none;
+  /* top: 10px; */
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+.worker-card:hover > .worker-description {
+  opacity: 0.8;
+  z-index: 15;
+}
+
+.worker-img {
+  width: 200px;
+  height: 200px;
 }
 
 @media screen and (max-width: 1400px) {
