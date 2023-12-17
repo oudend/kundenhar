@@ -1,0 +1,153 @@
+:root[data-theme="light"] {
+  --text: rgb(0, 0, 0);
+  --background: rgb(254, 231, 225);
+  --primary: rgb(255, 88, 51);
+  --accent: rgb(245, 108, 80);
+}
+:root[data-theme="dark"] {
+  --text: rgb(255, 255, 255);
+  --background: rgb(30, 7, 1);
+  --primary: rgb(204, 37, 0);
+  --accent: rgb(190, 65, 43);
+}
+
+:root {
+  --recipe-card-footer-color: rgba(255, 255, 255, 0.1);
+  font-family: "Source Sans 3", sans-serif;
+}
+
+body,
+html {
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden !important;
+  height: 100svh;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--primary);
+  height: 40px;
+}
+
+nav > h1 {
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.page-navigation {
+  display: flex;
+  background: var(--background);
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.page-navigation > span {
+  cursor: pointer;
+}
+
+#user-form {
+  display: flex;
+  margin-left: auto;
+  height: 100%;
+  align-items: center;
+}
+
+#search-user {
+  /* height: 30px; */
+  height: calc(100% - 8px);
+  min-width: 100px;
+  max-width: 250px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+#user-form > a {
+  display: flex;
+  border-radius: 100%;
+  border: none;
+  height: calc(100% - 8px);
+  background: white;
+  aspect-ratio: 1/1;
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+  color: var(--text);
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#user-form > a > button {
+  border-radius: 100%;
+  border: none;
+  height: calc(100% - 8px);
+  background: white;
+  aspect-ratio: 1/1;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  color: var(--text);
+}
+
+footer {
+  display: flex;
+  background: var(--background);
+  background: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid black;
+  width: calc(100% - 140px);
+  height: 300px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.footer-info {
+  padding-top: 10px;
+  width: 25%;
+  text-align: center;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.footer-info > section {
+  font-size: xx-small;
+}
+
+@media screen and (max-width: 850px) {
+  footer {
+    width: calc(100% - 10px);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .footer-info > section {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  footer {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .footer-info > section {
+    font-size: 0.4rem;
+  }
+}
