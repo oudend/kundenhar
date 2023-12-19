@@ -1,0 +1,11 @@
+#main-title {
+  display: flex;
+  background: var(--accent);
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+#main-title > h1 {
+  text-transform: uppercase;
+  font-weight: bolder;
+}

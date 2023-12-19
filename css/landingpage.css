@@ -1,28 +1,16 @@
 #main-search {
   display: flex;
   flex-direction: row-reverse;
-  /* background: var(--accent); */
-  /* background: var(--accent); */
   background: rgba(255, 255, 255, 1);
 
   height: 10rem;
   gap: 10px;
   background-image: url("../img/banner.png");
-  /* Create the parallax scrolling effect */
   width: 100%;
-  /* background-attachment: fixed; */
-  /* -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); */
   background-repeat: no-repeat;
   background-position-y: -40px;
   background-position-x: center;
   background-size: 900px 300px;
-}
-
-textarea:focus,
-input:focus,
-select:focus {
-  outline: none;
 }
 
 #main-search-sort {
@@ -185,9 +173,6 @@ select:focus {
   transform: scale(0.5);
   transition: transform 600ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  /* background-image: linear-gradient(white, transparent 50%),
-    url(https://picsum.photos/300/300); */
 }
 
 .recipe-card:hover > .recipe-card-content {

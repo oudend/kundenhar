@@ -5,6 +5,7 @@
   text-align: center;
   min-height: 400px;
   place-items: center;
+  margin-top: 100px;
 }
 
 .login-form > input {
